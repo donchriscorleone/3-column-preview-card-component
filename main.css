@@ -66,6 +66,7 @@ section div button {
   height: 2.5rem;
   border-radius: 45px;
   border-style: none;
+  font-family: var(--font-lexend);
 }
 
 .sedan {
@@ -96,8 +97,41 @@ button {
   background-color: var(--clr-very-light-gray);
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (min-width: 400px) {
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1439px) {
+  main {
+    width: 70vw;
+    height: 60%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  section {
+    height: 100%;
+    padding-top: 3rem;
+    padding-left: 2.5rem;
+  }
+
+  div {
+    height: 100%;
+  }
+
+  section div h1 {
+    font-size: 3.2rem;
+  }
+
+  section div p {
+    font-size: 1.12rem;
+    max-width: 85%;
+    line-height: 1.5rem;
+  }
+
+  section div button {
+    margin-top: 3rem;
+    width: 9rem;
+    height: 3.5rem;
+  }
 }
