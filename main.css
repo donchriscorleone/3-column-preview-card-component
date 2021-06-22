@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+
+:root {
+  --clr-bright-orange: hsl(31, 77%, 52%);
+  --clr-dark-cyan: hsl(184, 100%, 22%);
+  --clr-very-dark-cyan: hsl(179, 100%, 13%);
+  --clr-trans-white: hsla(0, 0%, 100%, 0.75);
+  --clr-very-light-gray: hsl(0, 0%, 95%);
+  --font-lexend: "Lexend Deca", sans-serif;
+  --font-big-shoulder: "Big Shoulders Display", cursive;
+}
+
+*,
+::before,
+::after {
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: var(--clr-very-light-gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 40px;
+}
+
+main {
+  width: 100vw;
+  display: inline-grid;
+  place-content: center;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+section {
+  padding: 3.5rem 2.5rem;
+  height: 450px;
+}
+
+section div {
+  display: inline-grid;
+  gap: 40px;
+}
+
+section div h1 {
+  font-family: var(--font-big-shoulder);
+  text-transform: uppercase;
+  font-size: 3rem;
+  color: var(--clr-trans-white);
+}
+
+section div p {
+  font-family: var(--font-lexend);
+  color: var(--clr-trans-white);
+  font-size: 0.95rem;
+  line-height: 1.4rem;
+}
+
+section div button {
+  width: 7rem;
+  height: 2.5rem;
+  border-radius: 45px;
+  border-style: none;
+}
+
+.sedan {
+  background-color: var(--clr-bright-orange);
+}
+
+.sedan div button {
+  color: var(--clr-bright-orange);
+}
+
+.suv div button {
+  color: var(--clr-dark-cyan);
+}
+
+.luxury div button {
+  color: var(--clr-very-dark-cyan);
+}
+
+.suv {
+  background-color: var(--clr-dark-cyan);
+}
+
+.luxury {
+  background-color: var(--clr-very-dark-cyan);
+}
+
+button {
+  background-color: var(--clr-very-light-gray);
+}
+
+@media screen and (max-width: 375px) {
+}
+
+@media screen and (min-width: 1440px) {
+}
